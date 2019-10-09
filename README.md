@@ -10,3 +10,7 @@
         - [Attempt #1](https://youtu.be/vu8bCfp_ATI)
     2. Permutation Palindrome
         - [Attempt #1](https://youtu.be/M6AAgnma8zs)
+
+- Greedy
+    1. Apple Stock
+        - [Attempt #1](https://youtu.be/AgehcZkOPOI)
