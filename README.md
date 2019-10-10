@@ -15,6 +15,10 @@
     1. Apple Stock
         - [Attempt #1](https://youtu.be/AgehcZkOPOI)
 
+- Sorting or Searching Algorithms
+    1. Find Rotation Point
+        - [Attempt #1](https://youtu.be/CBb_iucaMgQ)
+
 - Graph
     1. Binary Search Tree Checker
         - [Attempt #1](https://youtu.be/FZZAjVefQh4)
