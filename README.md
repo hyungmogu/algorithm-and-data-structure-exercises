@@ -14,3 +14,7 @@
 - Greedy
     1. Apple Stock
         - [Attempt #1](https://youtu.be/AgehcZkOPOI)
+
+- Graph
+    1. Binary Search Tree Checker
+        - [Attempt #1](https://youtu.be/FZZAjVefQh4)
