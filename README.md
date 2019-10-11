@@ -22,3 +22,7 @@
 - Graph
     1. Binary Search Tree Checker
         - [Attempt #1](https://youtu.be/FZZAjVefQh4)
+
+- Stack and Queues
+    1. Largest Element in Stack
+        - [Attempt #1](https://youtu.be/r7zuT39LwoI)
