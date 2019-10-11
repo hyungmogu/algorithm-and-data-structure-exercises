@@ -54,10 +54,10 @@ class LinkedListNode(object):
 def delete_node(node):
 
     if node.next == None:
-        return
+        return # This is incorrect. This doesn't consider the case delete_node(b) in 'A - B'
 
     node.value = node.next.value
-    node.next = None
+    node.next = None # This is incorrect. should be node.next.next.
 
 if __name__ == '__main__':
     a = LinkedListNode('A')
