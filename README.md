@@ -4,6 +4,8 @@
 - Arrays
     1. Two Sum
         - [Attempt #1](https://youtu.be/I7_YFq1w1lk)
+    2. Reverse String in Place
+        - [Attempt #1](https://youtu.be/I9JU4C58HFE)
 
 - Dictionaries and Hash Tables
     1. Jewels and Stone
