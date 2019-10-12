@@ -25,6 +25,8 @@
 - Sorting or Searching Algorithms
     1. Find Rotation Point
         - [Attempt #1](https://youtu.be/CBb_iucaMgQ)
+    2. Top Scores
+        - [Attempt #1](https://youtu.be/wcSTI2LOQKE)
 
 - Graph
     1. Binary Search Tree Checker
