@@ -13,6 +13,8 @@
         - [Attempt #1](https://youtu.be/vu8bCfp_ATI)
     2. Permutation Palindrome
         - [Attempt #1](https://youtu.be/M6AAgnma8zs)
+    3. In Flight Entertainment
+        - [Attempt #1](https://youtu.be/g9MkvbOtKNE)
 
 - Greedy
     1. Apple Stock
