@@ -19,6 +19,8 @@
 - Greedy
     1. Apple Stock
         - [Attempt #1](https://youtu.be/AgehcZkOPOI)
+    2. Highest Product of Three
+        - [Attempt #1](https://youtu.be/nyniqRWiWbk)
 
 - Sorting or Searching Algorithms
     1. Find Rotation Point

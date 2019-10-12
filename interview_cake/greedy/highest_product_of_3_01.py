@@ -1,3 +1,11 @@
+"""
+Note:
+
+This problem doesn't consider the case with negative numbers.
+
+This is augmented in 'highest_product_of_3_02.py'
+"""
+
 # Highest Product of 3
 #
 #
