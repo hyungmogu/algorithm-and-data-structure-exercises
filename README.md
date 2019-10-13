@@ -17,6 +17,8 @@
         - [Attempt #1](https://youtu.be/M6AAgnma8zs)
     3. In Flight Entertainment
         - [Attempt #1](https://youtu.be/g9MkvbOtKNE)
+    4. Word Cloud Data
+        - [Attempt #1](https://youtu.be/3bBdQ5_p2aA)
 
 - Greedy
     1. Apple Stock
