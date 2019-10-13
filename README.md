@@ -60,3 +60,6 @@
     - [Attempt #1](https://youtu.be/fxte8eQYlds)
 - Award Budget Cuts
     - [Attempt #1](https://youtu.be/kHccCc4FRU8)
+- Array Index and Element Equality
+    - [Attempt #1](https://youtu.be/NwvqWrW-nx0)
+
