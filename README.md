@@ -7,6 +7,8 @@
         - [Attempt #1](https://youtu.be/I7_YFq1w1lk)
     2. Reverse String in Place
         - [Attempt #1](https://youtu.be/I9JU4C58HFE)
+    3. Merge Sorted Arrays
+        - [Attempt #1](https://youtu.be/6EbeDjw9yxw)
 
 - Dictionaries and Hash Tables
     1. Jewels and Stone
