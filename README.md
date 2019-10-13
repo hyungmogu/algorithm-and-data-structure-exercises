@@ -37,6 +37,8 @@
 - Dynamic Programming
     1. Permutation of Letters
         - [Attempt #1](https://youtu.be/9J-FAbDy5wU)
+    2. Nth fibonacci number
+        - [Attempt #1](https://youtu.be/9CkRfF4RvH8)
 
 - Stack and Queues
     1. Largest Element in Stack
