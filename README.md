@@ -49,6 +49,8 @@
 - Linked List
     1. Delete Node
         - [Attempt #1](https://youtu.be/k9t23fvWY60)
+    2. Linked List with Cycle
+        - [Attempt #1](https://youtu.be/N3xtGkFSF0o)
 
 
 ### Pramp
