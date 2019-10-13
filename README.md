@@ -43,8 +43,10 @@
 - Stack and Queues
     1. Largest Element in Stack
         - [Attempt #1](https://youtu.be/r7zuT39LwoI)
+    2. Implementing Queue with Two Stacks
+        - [Attempt #1](https://youtu.be/cuKsjnOAZ2Y)
 
-- Lined List
+- Linked List
     1. Delete Node
         - [Attempt #1](https://youtu.be/k9t23fvWY60)
 
