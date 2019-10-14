@@ -25,6 +25,8 @@
         - [Attempt #1](https://youtu.be/AgehcZkOPOI)
     2. Highest Product of Three
         - [Attempt #1](https://youtu.be/nyniqRWiWbk)
+    3. Product of All Other Numbers
+        - [Attempt #1](https://youtu.be/3jEGT0T1txU)
 
 - Sorting or Searching Algorithms
     1. Find Rotation Point
