@@ -41,6 +41,8 @@
         - [Attempt #1](https://youtu.be/FZZAjVefQh4)
     2. Super Balanced Tree
         - [Attempt #1](https://youtu.be/WfinTYTeY9w)
+    3. 2nd Largest Item in BST
+        - [Attempt #1](https://youtu.be/fKPgezcksss)
 
 - Dynamic Programming
     1. Permutation of Letters
