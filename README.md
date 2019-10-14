@@ -66,4 +66,5 @@
     - [Attempt #1](https://youtu.be/kHccCc4FRU8)
 - Array Index and Element Equality
     - [Attempt #1](https://youtu.be/NwvqWrW-nx0)
-
+- Number of Paths
+    - [Attempt #1](https://youtu.be/dlOM0ujG1CE)
