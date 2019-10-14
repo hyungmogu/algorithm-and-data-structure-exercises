@@ -33,6 +33,8 @@
         - [Attempt #1](https://youtu.be/CBb_iucaMgQ)
     2. Top Scores
         - [Attempt #1](https://youtu.be/wcSTI2LOQKE)
+    3. Find Repeat Space
+        - [Attempt #1](https://youtu.be/ODhLNu1Eh6Q)
 
 - Graph
     1. Binary Search Tree Checker
