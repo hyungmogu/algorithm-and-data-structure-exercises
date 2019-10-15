@@ -65,6 +65,8 @@
         - [Attempt #1](https://youtu.be/k9t23fvWY60)
     2. Linked List with Cycle
         - [Attempt #1](https://youtu.be/N3xtGkFSF0o)
+    3. Reverse Linked List
+        - [Attempt #1](https://youtu.be/M5H32Z_AxUI)
 
 
 ### Pramp
