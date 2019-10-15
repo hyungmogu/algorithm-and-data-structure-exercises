@@ -57,6 +57,8 @@
         - [Attempt #1](https://youtu.be/r7zuT39LwoI)
     2. Implementing Queue with Two Stacks
         - [Attempt #1](https://youtu.be/cuKsjnOAZ2Y)
+    3. Parenthesis Matching
+        - [Attempt #1](https://youtu.be/b8npPwePF4Q)
 
 - Linked List
     1. Delete Node
