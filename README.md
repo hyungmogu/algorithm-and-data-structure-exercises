@@ -49,6 +49,8 @@
         - [Attempt #1](https://youtu.be/9J-FAbDy5wU)
     2. Nth fibonacci number
         - [Attempt #1](https://youtu.be/9CkRfF4RvH8)
+    3. Make Change
+        - [Attempt #1](https://youtu.be/5N7WV-Tm4fE)
 
 - Stack and Queues
     1. Largest Element in Stack
