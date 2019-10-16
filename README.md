@@ -9,6 +9,8 @@
         - [Attempt #1](https://youtu.be/I9JU4C58HFE)
     3. Merge Sorted Arrays
         - [Attempt #1](https://youtu.be/6EbeDjw9yxw)
+    4. Cafe Order Checker
+        - [Attempt #1](https://youtu.be/3XUMxlxXGAY)
 
 - Dictionaries and Hash Tables
     1. Jewels and Stone
