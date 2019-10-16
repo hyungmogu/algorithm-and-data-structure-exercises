@@ -35,6 +35,7 @@
         - [Attempt #1](https://youtu.be/CBb_iucaMgQ)
     2. Top Scores
         - [Attempt #1](https://youtu.be/wcSTI2LOQKE)
+        - [Attempt #2](https://youtu.be/AJ7xKPtNYrU)
     3. Find Repeat Space
         - [Attempt #1](https://youtu.be/ODhLNu1Eh6Q)
 
