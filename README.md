@@ -74,6 +74,8 @@
 ### 백준
 - A + B
     - [Attempt #1](https://youtu.be/SV7dBBxoY2g)
+- A - B
+    - [Attempt #1](https://youtu.be/R4Ft49WOSSA)
 
 ### Pramp
 - Word Count Engine
