@@ -38,6 +38,8 @@
         - [Attempt #2](https://youtu.be/AJ7xKPtNYrU)
     3. Find Repeat Space
         - [Attempt #1](https://youtu.be/ODhLNu1Eh6Q)
+    4. Merging Meeting Times
+        - [Attempt #1](https://youtu.be/P8Xnwwwi734)
 
 - Graph
     1. Binary Search Tree Checker
