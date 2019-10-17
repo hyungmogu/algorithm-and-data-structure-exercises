@@ -94,7 +94,6 @@ class Solution:
         while True:
             try:
                 line = input()
-                print(line)
             except Exception:
                 break
             contents.append(line)

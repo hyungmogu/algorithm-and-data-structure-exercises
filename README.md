@@ -80,6 +80,8 @@
     - [Attempt #1](https://youtu.be/R4Ft49WOSSA)
 - 정수 N개의 합
     - [Attempt #1](https://youtu.be/1bZf8PTfiBE)
+- 최소, 최대
+    - [Attempt #1](https://youtu.be/yfHjwGHXIo4)
 
 ### Pramp
 - Word Count Engine
