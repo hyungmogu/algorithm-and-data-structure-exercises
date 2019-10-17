@@ -76,6 +76,8 @@
     - [Attempt #1](https://youtu.be/SV7dBBxoY2g)
 - A - B
     - [Attempt #1](https://youtu.be/R4Ft49WOSSA)
+- 정수 N개의 합
+    - [Attempt #1](https://youtu.be/1bZf8PTfiBE)
 
 ### Pramp
 - Word Count Engine
