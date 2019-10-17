@@ -82,6 +82,7 @@
     - [Attempt #1](https://youtu.be/1bZf8PTfiBE)
 - 최소, 최대
     - [Attempt #1](https://youtu.be/yfHjwGHXIo4)
+    - [Attempt #2](https://youtu.be/mBzTOiviEEQ)
 
 ### Pramp
 - Word Count Engine
