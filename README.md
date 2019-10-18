@@ -97,3 +97,5 @@
     - [Attempt #1](https://youtu.be/NwvqWrW-nx0)
 - Number of Paths
     - [Attempt #1](https://youtu.be/dlOM0ujG1CE)
+- Smallest Substring of all Characters
+    - [Attempt #1](https://youtu.be/XmfBOSe-aZc)
