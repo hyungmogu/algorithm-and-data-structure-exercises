@@ -85,6 +85,8 @@
 - 최소, 최대
     - [Attempt #1](https://youtu.be/yfHjwGHXIo4)
     - [Attempt #2](https://youtu.be/mBzTOiviEEQ)
+- 수 정렬하기
+    - [Attempt #1](https://youtu.be/OvvIh9lxvtE)
 
 ### Pramp
 - Word Count Engine
