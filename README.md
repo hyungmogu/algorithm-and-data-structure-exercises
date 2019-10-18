@@ -56,6 +56,8 @@
         - [Attempt #1](https://youtu.be/9CkRfF4RvH8)
     3. Make Change
         - [Attempt #1](https://youtu.be/5N7WV-Tm4fE)
+    4. Climbing Stairs
+        - [Attempt #1](https://youtu.be/x4Sw9IoTtyw)
 
 - Stack and Queues
     1. Largest Element in Stack
