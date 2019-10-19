@@ -87,6 +87,8 @@
     - [Attempt #2](https://youtu.be/mBzTOiviEEQ)
 - 수 정렬하기
     - [Attempt #1](https://youtu.be/OvvIh9lxvtE)
+- 아스키 코드
+    - [Attempt #1](https://youtu.be/iGfQRu6lzKs)
 
 ### Pramp
 - Word Count Engine
