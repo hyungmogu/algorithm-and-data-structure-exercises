@@ -89,6 +89,8 @@
     - [Attempt #1](https://youtu.be/OvvIh9lxvtE)
 - 아스키 코드
     - [Attempt #1](https://youtu.be/iGfQRu6lzKs)
+- 스택
+    - [Attempt #1](https://youtu.be/twgXW-nR344)
 
 ### Pramp
 - Word Count Engine
