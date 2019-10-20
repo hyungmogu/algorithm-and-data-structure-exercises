@@ -91,6 +91,8 @@
     - [Attempt #1](https://youtu.be/iGfQRu6lzKs)
 - 스택
     - [Attempt #1](https://youtu.be/twgXW-nR344)
+- 단어의 개수
+    - [Attempt #1](https://youtu.be/DzH2amzFSJs)
 
 ### Pramp
 - Word Count Engine
