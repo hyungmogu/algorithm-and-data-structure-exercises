@@ -105,3 +105,7 @@
     - [Attempt #1](https://youtu.be/dlOM0ujG1CE)
 - Smallest Substring of all Characters
     - [Attempt #1](https://youtu.be/XmfBOSe-aZc)
+- Deletion Distance
+    - [Practice #1](https://youtu.be/Ub4JAN9h7H0)
+- Drone Flight Planner
+    - [Practice #1](https://youtu.be/jS9tA2XEdHc)

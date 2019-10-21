@@ -26,20 +26,20 @@
 class Solution:
     def solve(self, paths): # paths --> 매개변수
         #   1. 전달인자를 'flight_paths'에 저장한다
-        #   1. 높이의 기초값을 구한다
+        #   2. 높이의 기초값을 구한다
         max_height = 0
         initial_height = paths[0][2]
 
-        #   2. for문을 이용해 current_height - initial_height 로 순 높이를 구한다. 그리고 그 값을 'net_height'에 저장한다
+        #   3. for문을 이용해 current_height - initial_height 로 순 높이를 구한다. 그리고 그 값을 'net_height'에 저장한다
         for point in paths:
             current_height = point[2]
             net_height = current_height - initial_height
-            #   3. if문을 이용해 max_height < net_height, set max_height = net_height
+            #   4. if문을 이용해 max_height < net_height, set max_height = net_height
 
             if max_height < net_height:
                 max_height = net_height
 
-        #   4. max_height을 리턴한다
+        #   5. max_height을 리턴한다
         return max_height
 
 if __name__ == '__main__':
