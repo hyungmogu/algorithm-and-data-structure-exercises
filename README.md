@@ -113,3 +113,5 @@
     - [Practice #1](https://youtu.be/E4UuM79ubj0)
 - Root of a Number
     - [Practice #1](https://youtu.be/0nKosLukB_c)
+- Find the duplicates
+    = [Practice #1](https://youtu.be/VDf0FyOiHgo)
