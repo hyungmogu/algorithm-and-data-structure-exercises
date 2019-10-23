@@ -111,3 +111,5 @@
     - [Practice #1](https://youtu.be/jS9tA2XEdHc)
 - Pancake Sort
     - [Practice #1](https://youtu.be/E4UuM79ubj0)
+- Root of a Number
+    - [Practice #1](https://youtu.be/0nKosLukB_c)
