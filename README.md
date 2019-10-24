@@ -105,6 +105,7 @@
     - [Attempt #1](https://youtu.be/dlOM0ujG1CE)
 - Smallest Substring of all Characters
     - [Attempt #1](https://youtu.be/XmfBOSe-aZc)
+    - [Practice #1](https://youtu.be/_hjvFRPLJ2g)
 - Deletion Distance
     - [Practice #1](https://youtu.be/Ub4JAN9h7H0)
 - Drone Flight Planner
