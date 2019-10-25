@@ -48,8 +48,8 @@
 # 1. find the middle index
 # 2. check if value at index_middle is the solution
 #   2.1 if is solution, then return index_middle
-# 3. if not solution and arr[index_floor] > solution, then set index_floor = index_middle
-# 4. if not solution and arr[index_floor] < solution, then set index_ceiling = index_middle
+# 3. if not solution and solution on left hand side, then set index_ceiling = index_middle
+# 4. if not solution and solution on right hand side, then set index_floor = index_middle
 
 
 class Solution:
@@ -57,22 +57,32 @@ class Solution:
         index_floor = -1
         index_ceiling = len(arr)
 
-        # 1. find the middle index
-        half_distance = (index_ceiling - index_floor) // 2
-        index_middle = half_distance + index_floor
+        while index_floor + 1 < index_ceiling:
+            # 1. find the middle index
+            half_distance = (index_ceiling - index_floor) // 2
+            index_middle = half_distance + index_floor
 
-        # 2. check if value at index_middle is the solution
-        #   2.1 if is solution, then return index_middle
-        if arr[index_middle] == num:
-            return index_middle
+            # 2. check if value at index_middle is the solution
+            #   2.1 if is solution, then return index_middle
+            if arr[index_middle] == num:
+                return index_middle
 
+            # 3. if not solution and solution on left hand side, then set index_ceiling = index_middle
+            if self.solution_exists_lhs(arr, index_floor, index_middle, num):
+                index_ceiling = index_middle
+            # 4. if not solution and solution on right hand side, then set index_floor = index_middle
+            else:
+                index_floor = index_middle
 
-        # 3. if not solution and arr[index_floor] > solution, then set index_floor = index_middle
-        if arr[index_floor] > num or arr[index_middle] > num:
-            index_floor = index_middle
-        # 4. if not solution and arr[index_floor] < solution, then set index_ceiling = index_middle
-        else:
-            index_ceiling = index_middle
+        return -1
+
+    def solution_exists_lhs(self, arr, index_floor, index_middle, solution):
+        if index_floor < 0:
+            index_floor = 0
+
+        if solution >= arr[index_floor] and solution < arr[index_middle]:
+            return True
+        return False
 
 if __name__ == '__main__':
     case_1 = [2]
