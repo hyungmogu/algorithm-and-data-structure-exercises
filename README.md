@@ -122,3 +122,5 @@
     - [Practice #1](https://youtu.be/G3K_8z1z6kQ)
 - Matrix Spiral
     - [Practice #1](https://youtu.be/3iJtbYeajc0)
+- Sentence Reverse
+    - [Practice #1](https://youtu.be/Wmh-iL32InI)
