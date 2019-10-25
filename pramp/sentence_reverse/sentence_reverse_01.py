@@ -69,12 +69,21 @@ class Solution:
                 index_word_start = index
 
             #       3.2 if the character is the end of the first word, set index_word_end = index of character, and flip characters from index_word_start to index_word_end
-            if self.end_of_word(index, arr, index_word_start):
-                print(index_word_start)
-                print(index)
-                self.flip(arr, index_word_start, index)
-                index_word_start = None
+            elif self.end_of_word(index, arr, index_word_start):
+                if index_word_start == None:
+                    index += 1
+                    continue
+
                 index_word_end = None
+
+                if arr[index] == ' ':
+                    index_word_end = index - 1
+                else:
+                    index_word_end = index
+
+                self.flip(arr, index_word_start, index_word_end)
+
+                index_word_start = None
 
             #       3.3 once all done, reset index_word_start and index_word_end to None
             index +=1
@@ -82,36 +91,30 @@ class Solution:
         return arr
 
     def start_of_word(self, index, arr, index_word_start):
-        # 1. use ord and ascii to check if arr[index] is a letter
-        if index_word_start != None:
-            return False
+        # 1.is not a start of a word
+        if arr[index] != ' ' and index_word_start == None:
+            return True
 
         # 3. otherwise return False
-        return True
+        return False
 
     def end_of_word(self, index, arr, index_word_start):
+        if arr[index] == ' ' and index_word_start != None:
+            return True
 
-        char_ascii = ord(arr[index])
-        if index == len(arr) - 1:
-            return True if index_word_start != None else False
-
-        if (not (char_ascii >= 65 and char_ascii <= 90) and
-            not (char_ascii >= 97 and char_ascii <= 122)):
-
-            return True if index_word_start != None else False
+        if index == len(arr) - 1 and index_word_start != None:
+            return True
 
         return False
 
     def flip(self, arr, index_word_start, index_word_end):
 
         while index_word_start < index_word_end:
-            # print((index_word_end - 1) - index)
             arr[index_word_start], arr[index_word_end] = arr[index_word_end], arr[index_word_start]
 
             index_word_start += 1
             index_word_end -= 1
 
-            print(arr)
 
 
 
