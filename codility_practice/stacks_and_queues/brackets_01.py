@@ -55,6 +55,9 @@
 #
 #
 
+# you can write to stdout for debugging purposes, e.g.
+# print("this is a debug message")
+
 class Stack:
     def __init__(self):
         self.items = []
@@ -71,27 +74,35 @@ class Stack:
 
         return popped_value
 
-def solution(S):
-    # write your code in Python 3.6
-    stack = Stack()
-    #   1. for each element
-    for bracket in S:
-        #   2. if element is left handed bracket, push to stack
-        if bracket in {'(', '[', '{'}:
-            stack.push(bracket)
-        #   3. if element is right handed bracket, pop the element
-        else:
-            popped_bracket = stack.pop()
+class Solution:
+    def solve (S):
+        # write your code in Python 3.6
+        stack = Stack()
+        #   1. for each element
+        for bracket in S:
 
-            #       3.1 if the popped element is not the opposite pair of the right handed bracket, return 0
-            if ((bracket == ')' and popped_bracket == '(') or
-                (bracket == ']' and popped_bracket == '[') or
-                (bracket == '}' and popped_bracket == '{')):
-                continue
+            if bracket not in {'(', '[', '{', ')', ']', '}'}:
+                return 0
 
+            #   2. if element is left handed bracket, push to stack
+            if bracket in {'(', '[', '{'}:
+                stack.push(bracket)
+            #   3. if element is right handed bracket, pop the element
+            else:
+                popped_bracket = stack.pop()
+
+                #       3.1 if the popped element is not the opposite pair of the right handed bracket, return 0
+                if ((bracket == ')' and popped_bracket == '(') or
+                    (bracket == ']' and popped_bracket == '[') or
+                    (bracket == '}' and popped_bracket == '{')):
+                    continue
+
+                return 0
+
+        if len(stack.items) != 0:
             return 0
-    #   4. otherwise, return 1
-    return 1
+        #   4. otherwise, return 1
+        return 1
 
 
 if __name__ == '__main__':
@@ -109,12 +120,12 @@ if __name__ == '__main__':
     expected_5 = 1
     expected_6 = 0
 
-    solution_1 = solution(case_1)
-    solution_2 = solution(case_2)
-    solution_3 = solution(case_3)
-    solution_4 = solution(case_4)
-    solution_5 = solution(case_5)
-    solution_6 = solution(case_6)
+    solution_1 = Solution().solve(case_1)
+    solution_2 = Solution().solve(case_2)
+    solution_3 = Solution().solve(case_3)
+    solution_4 = Solution().solve(case_4)
+    solution_5 = Solution().solve(case_5)
+    solution_6 = Solution().solve(case_6)
 
     assert expected_1 == solution_1
     assert expected_2 == solution_2
