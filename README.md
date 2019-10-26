@@ -106,6 +106,8 @@
     - [Practice #1](https://youtu.be/iz-1CtFHMCY)
 - Brackets
     - [Practice #1](https://youtu.be/atknd4FFo6U)
+- Dominator
+    - [Practice #1](https://youtu.be/SY5XEWZNir8)
 
 ### Pramp
 - Word Count Engine
