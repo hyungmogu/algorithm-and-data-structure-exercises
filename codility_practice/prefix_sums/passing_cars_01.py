@@ -57,8 +57,7 @@
 #       3.2 # of 1 != 0
 #           3.2.1 # of 1 == len(arr) -->return 0
 #           3.2.2 # of 1 != len(arr)
-#               3.2.2.1 # of 1 < 1,000,000
-#               3.2.2.2 # of 1 >= 1,000,000 -> return -1
+#               3.2.2.1 total numbers of cars passing > 1,000,000,000 --> return -1
 #
 # Brute force solution
 #   1. for each 0, find all 1
@@ -81,7 +80,7 @@ class Solution:
         #   1. initialize current_total_1 = 0
         current_total_1 = 0
         total = 0
-        LIMIT = 1000000
+        LIMIT = 1000000000
 
         if len(A) == 1:
             return 0
@@ -94,9 +93,6 @@ class Solution:
         if current_total_1 == len(A):
             return 0
 
-        if current_total_1 >= LIMIT:
-            return -1
-
         #   3. for each element in arr
         for number in A:
             #       2.1 if element == 0, add total by the current_total_1
@@ -106,6 +102,9 @@ class Solution:
             #       2.2 if element != 0, subtract current_total_1 by 1
             else:
                 current_total_1 -= 1
+
+        if total > LIMIT:
+            return -1
 
         return total
 
