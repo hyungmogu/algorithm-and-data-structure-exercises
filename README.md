@@ -98,6 +98,8 @@
 ### Codility
 - Cyclic Rotation
     - [Practice #1](https://youtu.be/8ifkhqDZnSY)
+- Permutation Missing Elements
+    - [Practice #1](https://youtu.be/gSpapuDgKDY)
 
 ### Pramp
 - Word Count Engine
