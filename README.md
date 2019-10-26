@@ -94,6 +94,11 @@
 - 단어의 개수
     - [Attempt #1](https://youtu.be/DzH2amzFSJs)
 
+
+### Codility
+- Cyclic Rotation
+    - [Practice #1](https://youtu.be/8ifkhqDZnSY)
+
 ### Pramp
 - Word Count Engine
     - [Attempt #1](https://youtu.be/fxte8eQYlds)
