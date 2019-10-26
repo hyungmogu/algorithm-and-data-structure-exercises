@@ -1,3 +1,11 @@
+"""
+Here, Moe struggled with defining the condition for def solution_exists_lhs.
+
+The solution below is incorrect, although all test cases are passed.
+
+This is addressed in shifted_array_search_02.py
+"""
+
 # shifted array search
 #
 # given a sorted array but with the index of integers having shifted, find
