@@ -104,6 +104,8 @@
     - [Practice #1](https://youtu.be/iaVMx9H8Vbo)
 - Passing Cars
     - [Practice #1](https://youtu.be/iz-1CtFHMCY)
+- Brackets
+    - [Practice #1](https://youtu.be/atknd4FFo6U)
 
 ### Pramp
 - Word Count Engine
