@@ -124,3 +124,5 @@
     - [Practice #1](https://youtu.be/3iJtbYeajc0)
 - Sentence Reverse
     - [Practice #1](https://youtu.be/Wmh-iL32InI)
+- Shifted Array search
+    - [Practice #1](https://youtu.be/KS06EOSkWjo)
