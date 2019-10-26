@@ -1,3 +1,7 @@
+"""
+This file corrects mistake made in shifted_array_search_video_practice_01.py
+
+"""
 # Shifted Array Search
 # A sorted array of distinct integers shiftArr is shifted to the left by an
 # unknown offset and you don't have a pre-shifted copy of it. For instance, the

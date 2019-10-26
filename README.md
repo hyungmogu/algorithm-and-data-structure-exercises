@@ -131,3 +131,4 @@
     - [Practice #1](https://youtu.be/Wmh-iL32InI)
 - Shifted Array search
     - [Practice #1](https://youtu.be/KS06EOSkWjo)
+    - [Practice #2](https://youtu.be/Af-4PdeW3KQ)
