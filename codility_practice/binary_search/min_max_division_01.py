@@ -55,71 +55,100 @@
 # each element of array A is an integer within the range [0..M].
 
 # ============================
-
-# Problem
-#   - given K many partitions and (M - 1) maximal number of elements in the paritioned
-#   block, design an algorithm that evaluates the lowest large sum of a
-#   partitioned block
+# you can write to stdout for debugging purposes, e.g.
+# print("this is a debug message")
+#
 #
 # Input
 #   - list of integers (A)
-#   - integer (K - number of paritions)
-#   - integer (M - upper bound of number of elements in partitioned block)
+#   - integer (K - the number of partitions / sublist)
+#   - intger (M - the upper bound of the number of elements in sublist)
 #
-# Output
-#   - integer (smallest largest sum)
+# output
+#   - integer (the largest minimal sum)
 #
-# Example
+# constraints
+#   - 0 <= K and K <= N
+#   - N and K in range [1 ... 100,000]
 #
-# Before partition
+# cases
+#   1. K = 0 --> doesn't exit
+#   1. K = 1 --> sum(A)
+#   2. 1 < K and K < N
+#   3. K = N --> max(A)
 #
-# K = 3, M = 5
-# [2,1,5,1,2,2,2][][] largest sum = 15
-#
-# partition #1
-# [2][1,5,1,2,2][2] --> second block exceeds M --> [2][1,5,1,2][2,2] ==> large sum 9
-#
-# partition #2
-#
-# [2][1,5,1,2][2,2] - >[2,1,5][][1,2,2,2] largest sum = 8
-#
-#
-# parition # 3
-# [2,1,5][][1,2,2,2] --> [2, 1][5, 1][2, 2, 2] largest sum = 6
-#
-# partition # 4
-# [2][1,5,1,2][2,2] largest sum 9 --> here we stop!
-#
-# pseudocode
-# 1. calculate initial sum
-# 2. initialize paritiion
-# 3. while solution not found
-# 4. find the largest sum in partition
-# 5. if is not solution
-# 6. reparition the block
+# =========================
+class Solution:
+    def solve(self, K, M, A):
+        #   1. initialize index_floor and index_ceiling (index_floor = max(A), index_ceiling = sum(A))
+        large_sum = sum(A)
+        i = max(A)
+        j = large_sum
 
-def solution(K, M, A):
-    large_sum = sum(A)
-    current_sum = 0
-    paritions = initialize_parition(A,K,M)
+        N = len(A)
 
-    # 3. while solution not found
-    while True:
-        # 4. find the largest sum in partition
-        large_sum = get_large_sum(A, partitions)
-        # 5. if is not solution
-        if current_sum <= large_sum:
-            large_sum = current_sum
-            partitions = update_partition(A, parititions)
-        # 6. reparition the block
-        else:
-            break
+        if K == 1:
+            return large_sum
 
-    return large_sum
+        if K == N or len(A) == 1:
+            return i
 
-# =============
-# - find the half distance of adjacent matrix
-# - move its limit by the amount
-#   - pointers on left to right
-#   - last pointer to left
-#   - if two pointers cross, switch direction
+        #   2. while i and j don't cross
+        while i <= j:
+            #   3. find mid
+            half_distance = (j - i) // 2
+            mid =  i + half_distance
+
+            #   4. check solution (getting the current number of paritions k. and current maximum, and checking to see if partition is correct)
+            k, current_large_sum = self.check(A, mid)
+
+            #   5. if current partition k > K,
+            #       4.1 set index_floor = index_mid + 1
+            #   6. if current partition is k <= K,
+            #       5.1 set j = mid - 1
+            #       5.2 update smallest large_sum (min(large_sum, current_large_sum))
+            if k > K:
+                i = mid + 1
+            else:
+                j = mid - 1
+                large_sum = min(large_sum, current_large_sum)
+
+        return large_sum
+
+    # time complexity
+
+    def check(self, A, mid):
+        k = 1
+        large_sum = 0
+        index = 1
+
+        partition_sum = A[0]
+
+        while index < len(A):
+            if partition_sum + A[index] > mid:
+                large_sum = max(large_sum,partition_sum)
+                partition_sum = A[index]
+                k += 1
+            else:
+                partition_sum += A[index]
+
+            index += 1
+
+        # update it one last time for the last element
+        large_sum = max(large_sum,partition_sum)
+
+        # write your code in Python 3.6
+        return k, large_sum
+
+
+
+if __name__ == '__main__':
+    A_case_1 = [2, 1, 5, 1, 2, 2, 2]
+    K_case_1 = 3
+    M_case_1 = 5
+
+    expected_1 = 6
+
+    solution_1 = Solution().solve(K_case_1, M_case_1, A_case_1)
+
+    assert expected_1 == solution_1
