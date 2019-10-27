@@ -112,6 +112,8 @@
     - [Practice #1](https://youtu.be/qOWYyptcpCA)
 - Ladders
     - [Practice #1](https://youtu.be/XVi9zPLQaVs)
+- Min Max Division
+    - [Practice #1](https://youtu.be/IN9CMsxzsIE)
 
 ### Pramp
 - Word Count Engine
