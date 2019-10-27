@@ -63,7 +63,46 @@
 #   7. increment front by 1
 #
 #
-#
+# Attempt # 1
+class Solution:
+    def solve(self, M, A):
+        #   1. initialize index_i to be 0 and index_j to be index_i and set to be empty and slices = 0
+        if len(A) == 1:
+            return 1
+
+        index_i = 0
+        slices = 0
+        LIMIT = 1000000000
+
+        while index_i < len(A):
+            index_j = index_i
+            numbers_set = set()
+
+            #   2. while index_i < len(A) and index_j < len(A)
+            #   3. if A[index_j] not in numbers_set,
+            #       3.1 add number to numbers_set
+            #       3.2 increment 'slices' by 1
+            #       3.3 increment index_j by 1 and continue
+            #   4. otherwise increment index_i by 1 and continue
+            while index_j <len(A):
+
+                if A[index_j] in numbers_set:
+                    break
+
+                slices += 1
+
+                # if slices greater than 1,000,000,000 return 1,000,000,000
+                if slices == LIMIT:
+                    return LIMIT
+
+                numbers_set.add(A[index_j])
+                index_j += 1
+
+            index_i += 1
+        return slices
+
+
+# Attempt # 2
 class Solution:
     def solve(self, M, A):
         back = front = slices = 0
