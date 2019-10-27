@@ -56,25 +56,70 @@
 
 # ============================
 
-
-# you can write to stdout for debugging purposes, e.g.
-# print("this is a debug message")
+# Problem
+#   - given K many partitions and (M - 1) maximal number of elements in the paritioned
+#   block, design an algorithm that evaluates the lowest large sum of a
+#   partitioned block
 #
-# input
-#   - list of integers
-# output
-#   - integer
+# Input
+#   - list of integers (A)
+#   - integer (K - number of paritions)
+#   - integer (M - upper bound of number of elements in partitioned block)
 #
-# constraints
+# Output
+#   - integer (smallest largest sum)
 #
-# A = [2,1,5,1,2,2,2]
+# Example
 #
-# pointers = [1,2,3,len(A)-2]
+# Before partition
+#
+# K = 3, M = 5
+# [2,1,5,1,2,2,2][][] largest sum = 15
+#
+# partition #1
+# [2][1,5,1,2,2][2] --> second block exceeds M --> [2][1,5,1,2][2,2] ==> large sum 9
+#
+# partition #2
+#
+# [2][1,5,1,2][2,2] - >[2,1,5][][1,2,2,2] largest sum = 8
+#
+#
+# parition # 3
+# [2,1,5][][1,2,2,2] --> [2, 1][5, 1][2, 2, 2] largest sum = 6
+#
+# partition # 4
+# [2][1,5,1,2][2,2] largest sum 9 --> here we stop!
 #
 # pseudocode
-#   1. put all pointers except last one after another
-#   2. if the size of largest array is > M, then decrement last pointer until satisfied
-#   3. find the current largest sum of elements, and store in large_sum
-#   4. if large_sum > large_sum_max, return current value
-#   5. if not solution move each pointer by len(nextArr) // 2 (pointer on lhs move to right, and pointer on right move to left)
-#   6. if pointers cross, then move in opposite direction
+# 1. calculate initial sum
+# 2. initialize paritiion
+# 3. while solution not found
+# 4. find the largest sum in partition
+# 5. if is not solution
+# 6. reparition the block
+
+def solution(K, M, A):
+    large_sum = sum(A)
+    current_sum = 0
+    paritions = initialize_parition(A,K,M)
+
+    # 3. while solution not found
+    while True:
+        # 4. find the largest sum in partition
+        large_sum = get_large_sum(A, partitions)
+        # 5. if is not solution
+        if current_sum <= large_sum:
+            large_sum = current_sum
+            partitions = update_partition(A, parititions)
+        # 6. reparition the block
+        else:
+            break
+
+    return large_sum
+
+# =============
+# - find the half distance of adjacent matrix
+# - move its limit by the amount
+#   - pointers on left to right
+#   - last pointer to left
+#   - if two pointers cross, switch direction
