@@ -108,6 +108,8 @@
     - [Practice #1](https://youtu.be/atknd4FFo6U)
 - Dominator
     - [Practice #1](https://youtu.be/SY5XEWZNir8)
+- Max Profit
+    - [Practice #1](https://youtu.be/qOWYyptcpCA)
 
 ### Pramp
 - Word Count Engine
