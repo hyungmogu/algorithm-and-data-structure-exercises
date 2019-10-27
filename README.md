@@ -110,6 +110,8 @@
     - [Practice #1](https://youtu.be/SY5XEWZNir8)
 - Max Profit
     - [Practice #1](https://youtu.be/qOWYyptcpCA)
+- Ladders
+    - [Practice #1](https://youtu.be/XVi9zPLQaVs)
 
 ### Pramp
 - Word Count Engine
