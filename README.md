@@ -114,6 +114,8 @@
     - [Practice #1](https://youtu.be/XVi9zPLQaVs)
 - Min Max Division
     - [Practice #1](https://youtu.be/IN9CMsxzsIE)
+- Count Distinct Slices
+    - [Practice #1](https://youtu.be/C59SA9wIXNg)
 
 ### Pramp
 - Word Count Engine
