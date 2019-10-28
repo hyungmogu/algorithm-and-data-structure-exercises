@@ -118,6 +118,8 @@
     - [Practice #1](https://youtu.be/C59SA9wIXNg)
 - Tie Ropes
     - [Practice #1](https://youtu.be/NseBSwSZ8bs)
+- Number Solitaire
+    - [Practice #1](https://youtu.be/QjbHCyzCMJs)
 
 ### Pramp
 - Word Count Engine
