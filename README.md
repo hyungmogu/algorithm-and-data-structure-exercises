@@ -116,6 +116,8 @@
     - [Practice #1](https://youtu.be/IN9CMsxzsIE)
 - Count Distinct Slices
     - [Practice #1](https://youtu.be/C59SA9wIXNg)
+- Tie Ropes
+    - [Practice #1](https://youtu.be/NseBSwSZ8bs)
 
 ### Pramp
 - Word Count Engine
