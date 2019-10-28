@@ -101,6 +101,76 @@ class Solution:
 
         return False
 
+
+# Attempt #2
+
+class Solution:
+
+    def solve(self, A):
+        if len(A) < 3:
+            return 0
+
+        #   1. initialize index_R, index_Q, index_P, num_triangles
+        index_P = total_num_triangles = 0
+        index_Q = 1
+        index_R = 2
+
+        #   2. sort the array
+        A.sort()
+
+        #   3. starting at front == 2,
+        while index_R < len(A):
+            # 4. if A[index_Q], A[index_P], A[index_R] are triangles, raise count by 1
+
+            if self.is_triangle(A[index_P], A[index_Q], A[index_R]):
+                total_num_triangles += 1
+
+            if self.move_index_R(index_P, index_Q, index_R, A):
+                index_R += 1
+                continue
+
+            if self.move_index_Q(index_P, index_Q, index_R, A):
+                index_Q += 1
+                continue
+
+            if self.move_index_P(index_P, index_Q, index_R, A):
+                index_P += 1
+
+        #   6. repeat the process until front is the size of Array
+        return total_num_triangles
+
+    def move_index_R(self, index_P, index_Q, index_R, A):
+        if index_P == index_Q - 1 and index_Q == index_R - 1:
+            return True
+
+        if (index_P == index_Q -1) and self.is_triangle(A[index_P], A[index_Q], A[index_R]):
+            return True if index_R < len(A) - 1 else False
+
+        return False
+
+
+    def move_index_Q(self, index_P, index_Q, index_R, A):
+        if index_Q < index_R - 1:
+            return True
+
+        return False
+
+    def move_index_P(self, index_P, index_Q, index_R, A):
+        if index_P < index_Q - 1:
+            return True
+        return False
+
+
+    def is_triangle(self, A_p, A_q, A_r):
+        if ((A_p + A_q > A_r) and
+            (A_q + A_r > A_p) and
+            (A_r + A_p > A_q)):
+
+                return True
+
+        return False
+
+
 if __name__ == '__main__':
     A_case_1 = [10, 2, 5, 1, 8, 12]
 
