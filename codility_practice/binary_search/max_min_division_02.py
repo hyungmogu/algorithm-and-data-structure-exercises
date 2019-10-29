@@ -85,3 +85,6 @@ def get_edge_case(A,N,M,floor,ceiling):
     return None
 
 
+# ========= attempt 2 ================
+
+# Solution checking. Couldn't find errors.
