@@ -182,3 +182,120 @@ def equi_leader_exists(N, index, leaders_lhs, leaders_rhs):
     if leaders_lhs[index] == leaders_rhs[(N - 2) - index]:
         return True
     return False
+
+
+
+# ====================== Attempt # 2 (100%) ====================
+#   What was done well
+#       - usage of functions on major points --> less confusion && easier replacements when done wrong
+#
+#   Note
+#       - shallow copy takes time
+#       - cases cases cases
+
+def solution(A):
+    # write your code in Python 3.6
+    N = len(A)
+
+    edge_case_value = get_edge_case(A,N)
+
+    if edge_case_value:
+        return edge_case_value
+
+    index = 0
+    equi_leader_count = 0
+
+    leaders_lhs = get_leaders_lhs(A,N)
+    leaders_rhs = get_leaders_rhs(A,N)
+
+    while index < N -1:
+
+        if equi_leader_exists(N, index, leaders_lhs, leaders_rhs):
+            equi_leader_count += 1
+
+        index += 1
+
+    return equi_leader_count
+
+def get_edge_case(A,N):
+    if N == 1:
+        return 0
+
+    return None
+
+def get_leaders_lhs(A,N):
+    numbers_frequency = {}
+    leaders_list = [None] * N
+    index = 0
+    leader = None
+
+    # 1. for element, index in A
+    while index < N:
+        # 2. add count to key 'element'
+        number = A[index]
+        n = index + 1
+
+        if number in numbers_frequency:
+            numbers_frequency[number] += 1
+        else:
+            numbers_frequency[number] = 1
+
+        # 3. set leader
+        if leader is None:
+            leader = number
+
+        #   3.1 if current dominator has count more than len(A[:index+1]) // 2, set leader[index] = dominator
+        if numbers_frequency[leader] > (n // 2):
+            leaders_list[index] = leader
+
+        #   3,2 if A[index] has count more than len(A[:index+1]) // 2, set leader[index] = dominator and set dominator = element
+        if numbers_frequency[number] > (n // 2):
+            leaders_list[index] = number
+            leader = number
+
+        index += 1
+
+    return leaders_list
+
+def get_leaders_rhs(A,N):
+    numbers_frequency = {}
+    leaders_list = [None] * N
+    index = 0
+    leader = None
+
+    # 1. for element, index in A
+    while index < N:
+        index_reversed = (N-1) - index
+        # 2. add count to key 'element'
+        number = A[index_reversed]
+        n = index + 1
+
+        if number in numbers_frequency:
+            numbers_frequency[number] += 1
+        else:
+            numbers_frequency[number] = 1
+
+        # 3. set leader
+        if leader is None:
+            leader = number
+
+        #   3.1 if current dominator has count more than len(A[:index+1]) // 2, set leader[index] = dominator
+        if numbers_frequency[leader] > (n // 2):
+            leaders_list[index] = leader
+
+        #   3,2 if A[index] has count more than len(A[:index+1]) // 2, set leader[index] = dominator and set dominator = element
+        if numbers_frequency[number] > (n // 2):
+            leaders_list[index] = number
+            leader = number
+
+        index += 1
+
+    return leaders_list
+
+def equi_leader_exists(N, index, leaders_lhs, leaders_rhs):
+    if leaders_lhs[index] == None or leaders_rhs[(N - 2) - index] == None:
+        return False
+
+    if leaders_lhs[index] != leaders_rhs[(N - 2) - index]:
+        return False
+    return True
