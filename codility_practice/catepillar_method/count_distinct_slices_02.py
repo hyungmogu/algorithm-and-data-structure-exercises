@@ -31,7 +31,7 @@ def solution(M, A):
             back += 1
             continue
 
-        if A[front] > LIMIT:
+        if slices > LIMIT:
             return LIMIT
 
         slices = slices + ((front - back) + 1)
