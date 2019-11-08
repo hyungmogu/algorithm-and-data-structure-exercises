@@ -115,6 +115,7 @@
     - [Practice #1](https://youtu.be/XVi9zPLQaVs)
 - Min Max Division
     - [Practice #1](https://youtu.be/IN9CMsxzsIE)
+    - [Practice #2](https://youtu.be/ro5Pngrr-H8)
 - Count Distinct Slices
     - [Practice #1](https://youtu.be/C59SA9wIXNg)
 - Tie Ropes
