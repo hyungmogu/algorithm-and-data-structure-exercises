@@ -108,6 +108,7 @@
     - [Practice #1](https://youtu.be/atknd4FFo6U)
 - Dominator
     - [Practice #1](https://youtu.be/SY5XEWZNir8)
+    - [Practice #2](https://youtu.be/xdeN9t-0pdg)
 - Max Profit
     - [Practice #1](https://youtu.be/qOWYyptcpCA)
 - Ladders
