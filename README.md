@@ -121,6 +121,7 @@
     - [Practice #2](https://youtu.be/8bJaDP0m6nY)
 - Tie Ropes
     - [Practice #1](https://youtu.be/NseBSwSZ8bs)
+    - [Practice #2](https://youtu.be/I0-GSz4Yv1w)
 - Number Solitaire
     - [Practice #1](https://youtu.be/QjbHCyzCMJs)
 
