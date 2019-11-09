@@ -100,3 +100,42 @@ def solution(M, A):
 
     #   4. return total number of distinct slices
     return slices
+
+
+# =============== solution ======================
+
+# pseudocode
+def solution(M, A):
+    N = len(A)
+    numbers_set = set()
+    LIMIT = 1000000000
+    slices = 0
+
+    back = 0
+    front = 0
+
+    if N == 1:
+        return 1
+
+    #   1. for each element in A, travel until repeating element found
+    while front < N:
+        number = A[front]
+        # backward
+        #   3. if back element found, move back until no repeatin gelement found
+        if number in numbers_set:
+            number_back = A[back]
+            numbers_set.remove(number_back)
+            back += 1
+            continue
+
+        # forward
+        #   2. and for each element in A, update total number of slices
+        numbers_set.add(number)
+        slices += (front - back) + 1
+        front += 1
+
+    if slices > LIMIT:
+        return LIMIT
+
+    #   4. return total number of distinct slices
+    return slices
