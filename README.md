@@ -118,6 +118,7 @@
     - [Practice #2](https://youtu.be/ro5Pngrr-H8)
 - Count Distinct Slices
     - [Practice #1](https://youtu.be/C59SA9wIXNg)
+    - [Practice #2](https://youtu.be/8bJaDP0m6nY)
 - Tie Ropes
     - [Practice #1](https://youtu.be/NseBSwSZ8bs)
 - Number Solitaire
