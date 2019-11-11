@@ -124,6 +124,8 @@
     - [Practice #2](https://youtu.be/I0-GSz4Yv1w)
 - Number Solitaire
     - [Practice #1](https://youtu.be/QjbHCyzCMJs)
+- Binary Gap
+    - [Practice #1](https://youtu.be/4faFJ0gAr8A)
 
 ### Pramp
 - Word Count Engine
