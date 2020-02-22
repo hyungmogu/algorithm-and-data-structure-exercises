@@ -1,4 +1,4 @@
-# Fishes
+# Fish
 
 # You are given two non-empty arrays A and B consisting of N integers. Arrays A
 # and B represent N voracious fish in a river, ordered downstream along the flow
