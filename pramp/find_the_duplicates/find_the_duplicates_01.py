@@ -56,7 +56,6 @@ class Solution:
                 output.append(number)
 
         #   4. return output
-        print(output)
         return output
 
     def matchingValueExists(self, arr, number):

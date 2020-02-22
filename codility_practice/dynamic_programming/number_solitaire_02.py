@@ -1,6 +1,8 @@
 # number solitaire
 #
 # =============== solution ===================
+#   - What to improve on
+#       - the fine details (7 and 6)
 #
 # you can write to stdout for debugging purposes, e.g.
 # print("this is a debug message")

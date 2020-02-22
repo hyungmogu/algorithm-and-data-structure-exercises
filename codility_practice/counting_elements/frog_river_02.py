@@ -85,8 +85,6 @@ def solution(X, A):
 
 # time complexity O(N), spatial complexity O(10
 
-
-
 if __name__ == '__main__':
     A_case_1 = [1,3,1,4,2,3,5,4]
     X_case_1 = 5

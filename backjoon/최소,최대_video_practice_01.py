@@ -1,6 +1,6 @@
 """
 Note: Incomplete. Hyungmo fell asleep.
-Solution Addressed in 최소,최대_video_practice_02.py
+Solution addressed in 최소,최대_video_practice_02.py
 """
 
 # 최소, 최대

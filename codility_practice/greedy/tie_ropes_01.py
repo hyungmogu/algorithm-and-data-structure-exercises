@@ -1,4 +1,5 @@
-# Greedy
+# Tie Ropes
+# https://app.codility.com/programmers/lessons/16-greedy_algorithms/tie_ropes/
 #
 # There are N ropes numbered from 0 to N − 1, whose lengths are given in an
 # array A, lying on the floor in a line. For each I (0 ≤ I < N), the length of

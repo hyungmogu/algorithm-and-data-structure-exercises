@@ -11,9 +11,6 @@ class Node:
 
 
 class Solution:
-    def __init__(self):
-        self.current_val = 0
-
     def binarySearchTreeChecker(self, root):
         val_list = []
 

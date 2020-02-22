@@ -4,7 +4,8 @@
 # Return them as a set.
 #
 # cat -> {cat, cta, tac, tca, atc, act}
-
+#
+# CONDITION: Solve using Dynamic Programming
 
 class Solution:
     def permutationOfCharacters(self, characters):
@@ -20,7 +21,11 @@ class Solution:
         new_permutation_characters_set = set()
         for permutation_characters in permutation_characters_except_last_set:
             for character_position in range(len(permutation_characters) + 1):
-                new_permutation = permutation_characters[:character_position] + last_character + permutation_characters[character_position:]
+                new_permutation = (
+                    permutation_characters[:character_position] +
+                    last_character +
+                    permutation_characters[character_position:]
+                )
 
                 new_permutation_characters_set.add(new_permutation)
 

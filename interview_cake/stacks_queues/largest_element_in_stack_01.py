@@ -56,12 +56,10 @@ class MaxStack(Stack):
         self.max_val_list.pop()
 
     def get_max(self):
-        if len(self.max_val_list[-1]) == 0:
+        if len(self.max_val_list) == 0:
             return None
 
         return self.max_val_list[-1]
-
-
 
 if __name__ == '__main__':
     stack = MaxStack()

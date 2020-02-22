@@ -88,6 +88,7 @@
 #     'undulate',
 #     'xenoepist',
 #     'asymptote',
+#     'bear'
 # ]
 #
 # word = [

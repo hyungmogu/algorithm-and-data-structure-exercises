@@ -22,7 +22,7 @@
 #
 # 출력
 #   - 정수
-#
+
 # Pseudocode
 class Solution:
     def solve(self, paths): # paths --> 매개변수
