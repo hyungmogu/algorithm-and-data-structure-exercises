@@ -34,36 +34,19 @@
 
 # ================ solution ==============
 
-# you can write to stdout for debugging purposes, e.g.
-# print("this is a debug message")
-#
-# 1. initialize a set
-# 2. for each element in A,
-# 3. check if element exists in set
-#   3.1 if exists, then remove from set
-#   3.2 if doesn't exist, the add to set
-# 4. pop the element from set and return value
-#
-# has time complexity O(N) and spatial complexity of O(N)
-
 def solution(A):
-    if len(A) == 1:
-        return A[0]
+    frequency_dict = {}
 
-    # 1. initialize a set
-    pairs_set = set()
-    # 2. for each element in A,
-    for element in A:
-        # 3. check if element exists in set
-        if element in pairs_set:
+    for value in A:
 
-            #   3.1 if exists, then remove from set
-            pairs_set.remove(element)
+        if value not in frequency_dict:
+            frequency_dict[value] = 1
         else:
-            #   3.2 if doesn't exist, the add to set
-            pairs_set.add(element)
+            frequency_dict[value] += 1
 
-    # 4. pop the element from set and return value
-    return pairs_set.pop()
+    keys = frequency_dict.keys()
 
-    # has time complexity O(N) and spatial complexity of O(N)
+    for key in keys:
+
+        if frequency_dict[key] % 2 != 0:
+            return key
