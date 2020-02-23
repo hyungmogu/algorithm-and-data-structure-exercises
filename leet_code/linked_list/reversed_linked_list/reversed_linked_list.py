@@ -26,3 +26,20 @@ class Solution:
         head.next = None
 
         return node
+
+
+# =============== solution (iterative) ================
+
+class Solution:
+    def reverseList(self, head: ListNode) -> ListNode:
+        current = head
+        prev = None
+
+        while current is not None:
+            next = current.next
+            current.next = prev
+            prev = current
+            current = next
+
+
+        return prev
